@@ -1,0 +1,74 @@
+@import 'tailwindcss';
+
+@theme {
+	--color-primary: #e06100;
+
+	@keyframes fadeIn {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
+
+	@keyframes fromLeft {
+		from {
+			right: 100%;
+		}
+		to {
+			right: 0;
+		}
+	}
+
+	@keyframes full {
+		from {
+			width: 0;
+		}
+		to {
+			width: 100%;
+		}
+	}
+
+	@keyframes fullWord1 {
+		from {
+			width: 0;
+		}
+		to {
+			width: 339px;
+		}
+	}
+
+	@keyframes fullWord1Mobile {
+		from {
+			width: 0;
+		}
+		to {
+			width: 282px;
+		}
+	}
+
+	@keyframes fullWord2 {
+		from {
+			width: 0;
+		}
+		to {
+			width: 222px;
+		}
+	}
+
+	@keyframes fullWord2Mobile {
+		from {
+			width: 0;
+		}
+		to {
+			width: 185px;
+		}
+	}
+}
+
+body {
+	font-family: 'Geist Variable', sans-serif;
+	background-color: var(--color-primary);
+	color: white;
+}
