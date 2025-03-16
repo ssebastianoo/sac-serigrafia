@@ -1,6 +1,7 @@
 <script lang="ts">
 	import screenPrintingVideo from '$lib/assets/screen-printing.mp4';
-	import { Menu, X, ArrowDown } from '@lucide/svelte';
+	import logo from '$lib/assets/logo.png';
+	import { Menu, X } from '@lucide/svelte';
 
 	let sideBar = $state<HTMLDivElement>();
 </script>
@@ -109,5 +110,6 @@
 			>
 		</div>
 	</div>
-	<h1 class="text-5xl sm:text-7xl">SAC <br /> SERIGRAFIA</h1>
+	<!-- <h1 class="text-5xl sm:text-7xl">SAC <br /> SERIGRAFIA</h1> -->
+	<img src={logo} alt="Logo" class="w-52 sm:w-80" />
 </div>
