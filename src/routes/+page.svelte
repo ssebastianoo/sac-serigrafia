@@ -1,6 +1,6 @@
 <script lang="ts">
 	import screenPrintingVideo from '$lib/assets/screen-printing.mp4';
-	import { Menu, X } from '@lucide/svelte';
+	import { Menu, X, ArrowDown } from '@lucide/svelte';
 
 	let sideBar = $state<HTMLDivElement>();
 </script>
@@ -71,30 +71,43 @@
 		<a class="hover:underline" href="/storia">Storia</a>
 		<a class="hover:underline" href="/contatti">Contatti</a>
 	</div>
-	<div class="flex flex-col items-center font-thin tracking-normal sm:mt-[104px]">
-		<div class="flex gap-[8px] text-4xl">
-			<h1 class="animate-[fadeIn_.5s_ease-in-out_forwards_.2s] opacity-0">Dal</h1>
-			<div class="relative h-[40px] w-[84px] overflow-hidden">
-				<h1
-					class="absolute right-full animate-[fromLeft_.5s_cubic-bezier(.14,.66,.39,.96)_forwards_1s] font-medium"
-				>
-					1966
-				</h1>
-				<div
-					class="absolute bottom-[1px] h-[1px] w-0 animate-[full_.5s_cubic-bezier(.14,.66,.39,.96)_forwards_1.8s] bg-white"
-				></div>
+	<div>
+		<div
+			class="flex translate-y-20 animate-[slideUp_1s_ease-in-out_forwards_3.2s] flex-col items-center font-thin tracking-normal sm:mt-[104px]"
+		>
+			<div class="flex gap-[8px] text-4xl">
+				<h1 class="animate-[fadeIn_.5s_ease-in-out_forwards_.2s] opacity-0">Dal</h1>
+				<div class="relative h-[40px] w-[84px] overflow-hidden">
+					<h1
+						class="absolute right-full animate-[fromLeft_.5s_cubic-bezier(.14,.66,.39,.96)_forwards_1s] font-medium"
+					>
+						1966
+					</h1>
+					<div
+						class="absolute bottom-[1px] h-[1px] w-0 animate-[full_.5s_cubic-bezier(.14,.66,.39,.96)_forwards_1.8s] bg-white"
+					></div>
+				</div>
 			</div>
+			<h1
+				class="w-0 animate-[fullWord1Mobile_.5s_cubic-bezier(.14,.66,.39,.96)_forwards_2.3s] overflow-hidden text-3xl whitespace-nowrap sm:animate-[fullWord1_.5s_cubic-bezier(.14,.66,.39,.96)_forwards_2.3s] sm:text-4xl"
+			>
+				produciamo serigrafie
+			</h1>
+			<h1
+				class="w-0 animate-[fullWord2Mobile_.5s_cubic-bezier(.14,.66,.39,.96)_forwards_2.8s] overflow-hidden text-3xl whitespace-nowrap sm:animate-[fullWord2_.5s_cubic-bezier(.14,.66,.39,.96)_forwards_2.8s] sm:text-4xl"
+			>
+				per le Aziende
+			</h1>
 		</div>
-		<h1
-			class="w-0 animate-[fullWord1Mobile_.5s_cubic-bezier(.14,.66,.39,.96)_forwards_2.3s] overflow-hidden text-3xl whitespace-nowrap sm:animate-[fullWord1_.5s_cubic-bezier(.14,.66,.39,.96)_forwards_2.3s] sm:text-4xl"
+		<div
+			class="mt-10 flex animate-[fadeIn_1s_ease-in-out_forwards_3.3s] flex-col items-center gap-1 text-xl opacity-0"
 		>
-			produciamo serigrafie
-		</h1>
-		<h1
-			class="w-0 animate-[fullWord2Mobile_.5s_cubic-bezier(.14,.66,.39,.96)_forwards_2.8s] overflow-hidden text-3xl whitespace-nowrap sm:animate-[fullWord2_.5s_cubic-bezier(.14,.66,.39,.96)_forwards_2.8s] sm:text-4xl"
-		>
-			per le Aziende
-		</h1>
+			<a
+				href="/catalogo"
+				class="bg-primary-transparent hover:bg-primary rounded-md p-2 font-extralight transition-[background-color_0.5s_ease-in-out]"
+				>Sfoglia il catalogo</a
+			>
+		</div>
 	</div>
 	<h1 class="text-5xl sm:text-7xl">SAC <br /> SERIGRAFIA</h1>
 </div>

@@ -2,6 +2,7 @@
 
 @theme {
 	--color-primary: #e06100;
+	--color-primary-transparent: rgba(224, 97, 0, 0.5);
 
 	@keyframes fadeIn {
 		from {
@@ -9,6 +10,15 @@
 		}
 		to {
 			opacity: 1;
+		}
+	}
+
+	@keyframes slideUp {
+		from {
+			transform: translateY(0);
+		}
+		to {
+			transform: translateY(-5rem);
 		}
 	}
 
