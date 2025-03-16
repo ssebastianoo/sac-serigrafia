@@ -111,5 +111,7 @@
 		</div>
 	</div>
 	<!-- <h1 class="text-5xl sm:text-7xl">SAC <br /> SERIGRAFIA</h1> -->
-	<img src={logo} alt="Logo" class="w-52 sm:w-80" />
+	<div class="flex justify-center sm:justify-start">
+		<img src={logo} alt="Logo" class="w-52 sm:w-80" />
+	</div>
 </div>
