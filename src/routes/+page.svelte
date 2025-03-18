@@ -1,6 +1,5 @@
 <script lang="ts">
 	import screenPrintingVideo from '$lib/assets/screen-printing.mp4';
-	// import screenPrinting from '$lib/assets/screen-printing.gif';
 	import logo from '$lib/assets/logo.png';
 	import { Menu, X } from '@lucide/svelte';
 
@@ -76,7 +75,7 @@
 	</div>
 	<div>
 		<div
-			class="flex translate-y-20 animate-[slideUp_1s_ease-in-out_forwards_3.2s] flex-col items-center font-thin tracking-normal sm:mt-[104px]"
+			class="flex translate-y-20 animate-[slideUp_1s_cubic-bezier(.14,.66,.39,.96)_forwards_3.2s] flex-col items-center font-thin tracking-normal sm:mt-[104px]"
 		>
 			<div class="flex gap-[8px] text-4xl">
 				<h1 class="animate-[fadeIn_.5s_ease-in-out_forwards_.2s] opacity-0">Dal</h1>
@@ -103,7 +102,7 @@
 			</h1>
 		</div>
 		<div
-			class="mt-10 flex animate-[fadeIn_1s_ease-in-out_forwards_3.3s] flex-col items-center gap-1 text-xl opacity-0"
+			class="mt-10 flex animate-[fadeIn_1s_cubic-bezier(.14,.66,.39,.96)_forwards_3.3s] flex-col items-center gap-1 text-xl opacity-0"
 		>
 			<a
 				href="/catalogo"
