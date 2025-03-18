@@ -1,5 +1,6 @@
 <script lang="ts">
 	import screenPrintingVideo from '$lib/assets/screen-printing.mp4';
+	// import screenPrinting from '$lib/assets/screen-printing.gif';
 	import logo from '$lib/assets/logo.png';
 	import { Menu, X } from '@lucide/svelte';
 
@@ -10,6 +11,7 @@
 	autoplay
 	muted
 	loop
+	playsinline
 	id="myVideo"
 	class="absolute top-0 left-0 -z-10 h-full w-full object-cover opacity-30"
 >
